@@ -112,7 +112,7 @@ function pokazDane() {
 function pobierzPogode(szerokosc_geo, dlugosc_geo) {
     var apiKey = '33e0a712108f726772e5267df086ff06'; // Klucz API
     /* Link do pobrania pogody na podstawie zmiennych lat i lon oznaczających szerokość i długość geograficzną użytkownika. */
-    var url = `http://api.openweathermap.org/data/2.5/weather?lat=${szerokosc_geo}&lon=${dlugosc_geo}&appid=${apiKey}&units=metric`;
+    var url = `https://api.openweathermap.org/data/2.5/weather?lat=${szerokosc_geo}&lon=${dlugosc_geo}&appid=${apiKey}&units=metric`;
     /* Dodanie "&units=metric" na końcu zmienia jednostkę temperatury na celsjusze */
     console.log(url);
 
