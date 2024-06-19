@@ -1,6 +1,5 @@
-https://linkin-park-fanpage.github.io
+https://extremewars.github.io/linkin-park-fanpage.github.io/index.html
 
-Proszę jako pierwszy otworzyć plik index.html.
 
 Bibliografia:
 1. Szablon - https://startbootstrap.com/template/the-big-picture
