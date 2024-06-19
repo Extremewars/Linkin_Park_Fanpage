@@ -1,0 +1,233 @@
+/* Ustawienie tła jako zdjęcie */
+body {
+  background: url(../assets/img/koncerty/Linkin_Park_Berlin_2010.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  /* vh-viewportheight - wysokość okna */
+  padding-bottom: 3rem;
+}
+
+/* Przciemnienie zdjęcia tła */
+.box-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  /* Cofamy element tak, aby nie przyciemniał tekstu i innych elementów */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Przyciemnienie 50% */
+}
+
+/* Wyrównanie zdjęć artystów na głównej stronie */
+.ind-img .carousel-inner {
+  border-style: solid;
+  border-width: 5px;
+  border-color: gray;
+  border-radius: 8px;
+}
+
+.ind-img .carousel-item {
+  height: 420px;
+  width: 100%;
+}
+
+.ind-img img {
+  margin: 0 auto !important;
+}
+
+.index-background img {
+  margin-top: 25px;
+  display: block;
+  object-fit: cover;
+}
+
+/* Dodatkowe przyciemnienie tła i dodanie białego tekstu */
+.index-background,
+.text-background {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  margin: 20px 0px;
+  border-radius: 10px;
+  text-align: justify;
+  /* Wyjustowanie elementów */
+  padding-bottom: 20px;
+}
+
+/* Zwiększenie zdjęć i dodanie im szarej obwódki */
+.text-background img {
+  height: 420px;
+  width: 500px;
+  margin-top: 25px;
+  display: block;
+  border-style: solid;
+  border-width: 5px;
+  border-color: gray;
+  border-radius: 8px;
+}
+
+/* Wyśrodkowanie wybranego elementu */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  /* Sprawia, że górna krawędź obiektu nie pokrywa się z górną krawędźą tła */
+}
+
+/* Albumy - zwiększenie obwódki i dodanie paddingu*/
+.album {
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Ustawia biały tekst w komórkach tabeli */
+.album td {
+  color: #fff;
+}
+
+/* Zamiast przyciemniania na najechaniu, teraz wiersz zmienia kolor na biały */
+.table-hover tr:hover {
+  background-color: #fff;
+}
+
+
+/* Koncerty - wielkość odtwarzacza*/
+iframe {
+  border: 0px;
+  width: 100%;
+}
+
+/* Wielkość mapki */
+#mapa {
+  width: 600px;
+  height: 360px;
+}
+
+/* Galeria */
+#galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 950px;
+  border-radius: 10px;
+}
+
+/* Parametry wielkości karuzeli */
+#galeria .carousel {
+  height: 70vh;
+  width: 100%;
+}
+
+/* Ustawia obramowanie do obrazów w galerii */
+#galeria img {
+  height: 70vh;
+  margin: 25px auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blueviolet;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Wielkość ikonki pogodowej */
+#ikona {
+  width: 100px;
+  height: 100px;
+  border-width: 0px;
+}
+
+/* Formularz - tło, wyśrodkowanie, biała obwódka */
+#formularz {
+  background-color: #000;
+  text-align: center;
+  border: 0.4px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Dodatkowe przyciemnienie tła, biały kolor tekstu, zwiększenie obwódki */
+.form-background {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Pozycjonowanie elementów formularza */
+.form-item {
+  margin: 20px auto;
+  padding-bottom: 5px;
+  max-width: 600px;
+}
+
+/* Wyśrodkowanie elementów formularza */
+.form-item div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Wycentrowanie komunikatów walidujących*/
+.form-item span {
+  display: block;
+  text-align: center;
+}
+
+/* Formatowanie elementów pobierających informacje formularza */
+.form-input {
+  width: 100%;
+  background-color: rgba(114, 114, 114, 0.7);
+  border: 2px solid white;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 10px;
+}
+
+/* Formatowanie przycisków pod koniec formularza */
+.form-button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 100%;
+  margin: 2px 0;
+}
+
+.form-button:hover {
+  background-color: #1f1f1f;
+}
+
+/* Obsługa elementów formularza dla mniejszych urządzeń */
+@media screen and (min-width:576px) {
+  .form-item div {
+    flex-direction: row;
+  }
+
+  .form-item div label {
+    /* Odsunięcie napisów od inputów */
+    width: 50%;
+
+  }
+
+  .form-input {
+    max-width: 350px;
+  }
+
+  .form-button {
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+/* Ustawienie koloru dla komunikatów walidujących */
+.czerwone {
+  color: red;
+}
