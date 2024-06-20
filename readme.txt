@@ -1,4 +1,4 @@
-https://extremewars.github.io/linkin-park-fanpage.github.io/index.html
+https://extremewars.github.io/linkin-park-fanpage/index.html
 
 
 Bibliografia:
