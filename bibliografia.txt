@@ -1,6 +1,3 @@
-https://extremewars.github.io/linkin-park-fanpage/index.html
-
-
 Bibliografia:
 1. Szablon - https://startbootstrap.com/template/the-big-picture
 2. Karuzela - https://getbootstrap.com/docs/5.3/components/carousel/
